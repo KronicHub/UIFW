@@ -1,6 +1,8 @@
 local FunctionResources = {
-    RandomString = 
+    RandomString = function()
 
-    
+    end,
+    RandomString = function()
 
+    end
 }
