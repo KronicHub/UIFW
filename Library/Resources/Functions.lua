@@ -1,7 +1,4 @@
-local FunctionResources = {
-    RandomString = function()
-
-    end,
+local KFunctionResources = {
     RandomString = function()
 
     end
