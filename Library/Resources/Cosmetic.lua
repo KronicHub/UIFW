@@ -7,5 +7,8 @@ local KCosmeticResources = {
     }
     local Icons = {
         --put icon assets here lol
+        Logo = '',
+        Logo_Text = ''
+        
     }
 }

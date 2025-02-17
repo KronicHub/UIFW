@@ -1,3 +1,5 @@
+-- the fox was here (fox news rël)
+
 local KLibrary_Version = 'v0i1'
 
 --Resource handler
@@ -22,10 +24,12 @@ local KLibrary = {
         local TopBar_Corner = Instance.new('UICorner', TopBar)
         TopBar_Corner.Size = UDim.new(0,4)
         local Topbar_Bottom = Instance.new('Frame', TopBar)
-        TopBar_Bottom.Size = UDim2.new(1,0,0,25)
+        TopBar_Bottom.Size = UDim2.new(1,0,0.5,0)
+        TopBar_Bottom.Position = UDim2.new(0,0,0.5,0)
         TopBar_Bottom.BackgroundColor3 = KCosmeticResources.Midground
-        
-        m
+        local TopBar_Stroke = Instance.new('Frame', Topbar_Bottom)
+        TopBar_Stroke.Size = UDim2.new(0,1,0,2)
+        TopBar_Stroke.Position = UDim2.new(0,0,1,0)
     end,
     function Tab_Add(Window, Name, Icon)
 
