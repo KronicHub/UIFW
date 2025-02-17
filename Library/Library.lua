@@ -30,6 +30,11 @@ local KLibrary = {
         local TopBar_Stroke = Instance.new('Frame', Topbar_Bottom)
         TopBar_Stroke.Size = UDim2.new(0,1,0,2)
         TopBar_Stroke.Position = UDim2.new(0,0,1,0)
+
+        local Sidebar = Instance.new('Frame', Window)
+        Sidebar.Position = UDim2.new(0,0,0,2)
+        Sidebar.Size = UDim2.new(0,30,1,-2)
+        Sidebar.BackgroundColor3 = KCosmeticResources.Background_2
     end,
     function Tab_Add(Window, Name, Icon)
 
