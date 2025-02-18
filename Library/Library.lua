@@ -13,20 +13,21 @@ local KLibrary = {
         NewGUI.Name = KFunctionResources.RandomString()
 
         local Window = Instance.new('Frame', NewGUI)
-        Window.BackgroundColor3 = CosmeticResources.Color.Background
+        Window.BackgroundColor3 = KCosmeticResources.Color.Background
         Window.Size = UDim2.new(0,500,0,300)
         local Window_Corner = Instance.new('UICorner', Window)
         Window_Corner.Size = UDim.new(0,4)
 
         local TopBar = Instance.new('Frame', Window)
         TopBar.Size = UDim2.new(1,0,0,25)
-        TopBar.BackgroundColor3 = KCosmeticResources.Midground
+        TopBar.BackgroundColor3 = KCosmeticResources.Color.Midground
         local TopBar_Corner = Instance.new('UICorner', TopBar)
         TopBar_Corner.Size = UDim.new(0,4)
         local Topbar_Bottom = Instance.new('Frame', TopBar)
         TopBar_Bottom.Size = UDim2.new(1,0,0.5,0)
         TopBar_Bottom.Position = UDim2.new(0,0,0.5,0)
-        TopBar_Bottom.BackgroundColor3 = KCosmeticResources.Midground
+        Topba
+        TopBar_Bottom.BackgroundColor3 = KCosmeticResources.Color.Midground
         local TopBar_Stroke = Instance.new('Frame', Topbar_Bottom)
         TopBar_Stroke.Size = UDim2.new(0,1,0,2)
         TopBar_Stroke.Position = UDim2.new(0,0,1,0)
@@ -34,7 +35,7 @@ local KLibrary = {
         local Sidebar = Instance.new('Frame', Window)
         Sidebar.Position = UDim2.new(0,0,0,2)
         Sidebar.Size = UDim2.new(0,30,1,-2)
-        Sidebar.BackgroundColor3 = KCosmeticResources.Background_2
+        Sidebar.BackgroundColor3 = KCosmeticResources.Color.Background_2
     end,
     function Tab_Add(Window, Name, Icon)
 
