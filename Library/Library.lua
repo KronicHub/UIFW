@@ -1,5 +1,7 @@
 -- the fox was here lmao 
 
+assert(typeof(gethui()) == "Instance", "Warning (gethui) : You are not using Awp, Wave, or another supported exploit. This script will not be ran to ensure safety.")
+
 -- Kronic Resource handler
 
 function KLoadResources()
@@ -11,7 +13,7 @@ local KLibrary_Version = 'v01i01'
 local KLibrary = {
 	Window_Add = function(GameName, ScriptVersion)
 		local NewGUI = Instance.new('ScreenGui')
-		NewGUI.Parent = game.Players.LocalPlayer.PlayerGui
+		NewGUI.Parent = gethui()
 		NewGUI.IgnoreGuiInset = true
 
 		local Window = Instance.new('Frame', NewGUI)
