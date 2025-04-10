@@ -9,6 +9,8 @@ function KLoadResources()
 
 	if isfile("KronicImages") == false then
 		makefolder("KronicImages")
+		-- download images
+		
 	end
 end
 
