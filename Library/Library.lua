@@ -5,7 +5,11 @@ assert(typeof(gethui()) == "Instance", "Warning (gethui) : You are not using Awp
 -- Kronic Resource handler
 
 function KLoadResources()
-	-- input github  cosmetic library loadstring here
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/KronicHub/UIFW/refs/heads/main/Library/Resources/Cosmetic.lua"))()
+
+	if isfile("KronicImages") == false then
+		makefolder("KronicImages")
+	end
 end
 
 local KLibrary_Version = 'v01i01'
@@ -54,12 +58,11 @@ local KLibrary = {
 		Topbar_Stroke.BorderSizePixel = 0
 		Topbar_Stroke.BackgroundColor3 = KCosmeticResources.Color.Accent
 
-		local Sidebar = Instance.new('Frame', Window)
-		Sidebar.Position = UDim2.new(0,0,0,21)
-		Sidebar.Size = UDim2.new(0,30,1,-21)
-		Sidebar.ZIndex = 17
-		Sidebar.BackgroundColor3 = KCosmeticResources.Color.Background_2
-		Sidebar.BorderColor3 = KCosmeticResources.Color.Stroke
+		local TabBar = Instance.new('Frame', Window)
+		TabBar.Size = UDim2.new(1,0,0,15)
+		TabBar.Position = UDim2.new(0,0,0,21)
+		TabBar.BackgroundColor3 = KCosmeticResources.Color.Midground
+		TabBar.BorderColor3 = KCosmeticResources.Color.Stroke
 
 	end
 }
